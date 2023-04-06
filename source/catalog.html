@@ -7,108 +7,131 @@
 </head>
 
 <body class="page__body">
-  <h1 class="visually-hidden">Галерея</h1>
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/logo.svg" alt="Логотип Седоны" class="main-header__logo-image" width="185" height="96">
-    </a>
-    <nav class="navigation">
-      <button class="navigation__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="navigation__list site-list">
-        <li class="site-list__item "><a href="index.html">Главная</a></li>
-        <li class="site-list__item site-list__item--current"><a href="catalog.html">Фото и видео</a></li>
-        <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-        <li class="site-list__item"><a href="#">HTML Academy</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main-container">
-    <h2 class="visually-hidden">Седона</h2>
-    <div class="intro">
-      <img class="intro__image" src="img/Title-Sedona.svg" width="229" height="39" alt="Sedona">
-    </div>
-
-    <section class="gallery">
-      <div class="gallery__wrapper">
-        <h2 class="gallery__title">Фото и видео</h2>
-        <div class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-          политике и экономике.</div>
-      </div>
-
-      <ul class="gallery__list">
-        <li class="gallery__item">
-          <img src="img/photo-1-mobile.jpg" alt="Неродные просторы" class="gallery__item-image">
-          <h3 class="gallery__item-title">Неродные просторы</h3>
-          <p class="gallery__item-author">Автор фото: Борис</p>
-          <img class="gallery__item-image-like" src="img/like-icon.svg" width="23" height="21" alt="Лайк">
-          <p class="gallery__item-likes">1350</p>
-        </li>
-
-        <li class="gallery__item">
-          <img src="img/photo-2-mobile.jpg" alt="Местная растительность" class="gallery__item-image">
-          <h3 class="gallery__item-title">Местная растительность</h3>
-          <p class="gallery__item-author">Автор фото: Сергей</p>
-          <img class="gallery__item-image-like" src="img/like-icon.svg" width="23" height="21" alt="Лайк">
-          <p class="gallery__item-likes">143</p>
-        </li>
-
-        <li class="gallery__item">
-          <img src="img/photo-3-mobile.jpg" alt="Дорога на север" class="gallery__item-image">
-          <h3 class="gallery__item-title">Дорога на север</h3>
-          <p class="gallery__item-author">Автор фото: Петр</p>
-          <img class="gallery__item-image-like" src="img/like-icon.svg" width="23" height="21" alt="Лайк">
-          <p class="gallery__item-likes">96</p>
-        </li>
-
-        <li class="gallery__item">
-          <img src="img/photo-4-mobile.jpg" alt="Мост Дьявола" class="gallery__item-image">
-          <h3 class="gallery__item-title">Мост Дьявола</h3>
-          <p class="gallery__item-author">Автор фото: Антон</p>
-          <img class="gallery__item-image-like" src="img/like-icon.svg" width="23" height="21" alt="Лайк">
-          <p class="gallery__item-likes">254</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="video">
-      <div class="video__wrapper">
-        <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-          раз!</p>
-        <img src="img/video-mobile.jpg" alt="Видеоролик" class="video__image">
-      </div>
-    </section>
-  </main>
-
-  <footer class="main-footer">
-    <p class="main-footer__hashtag">#VISITSEDONA</p>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a href="#" class="social-list__link">
-          <img src="img/social-youtube.svg" alt="Youtube" class="social-list__image">
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link">
-          <img src="img/social-tg.svg" alt="Telegram" class="social-list__image">
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link">
-          <img src="img/social-vk.svg" alt="VK" class="social-list__image">
-        </a>
-      </li>
-    </ul>
-    <div class="main-footer__copyright">
-      <p class="main-footer__copyright-text">Разработано</p>
-      <a href="#" class="main-footer__copyright-link">
-        <img class="main-footer__copyright-image" src="img/copyright-image.svg" alt="Разработано Академией">
+  <div class="page__wrapper">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo.svg" alt="Логотип Седоны." class="main-header__logo-image" width="185" height="96">
       </a>
-    </div>
-  </footer>
+      <button class="main-header__toggle">
+        <span class="visually-hidden">Открыть/закрыть меню.</span>
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item "><a href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--current"><a href="catalog.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="intro intro--inner">
+        <h1 class="visually-hidden">Седона</h1>
+        <img class="intro__image" src="img/Title-Sedona.svg" width="229" height="39" alt="Sedona.">
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__header heading">
+          <h2 class="heading__title">Фото и видео</h2>
+          <div class="heading__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+            о политике и экономике.</div>
+        </div>
+
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--full">
+            <figure class="gallery__card">
+              <a href="#" class="gallery__item-image-link">
+                <img class="gallery__item-image" src="img/photo-1-mobile.jpg" alt="Неродные просторы">
+              </a>
+              <figcaption>
+                <h3 class="gallery__item-title">Неродные просторы</h3>
+                <p class="gallery__item-author">Автор фото: Борис</p>
+                <span class="gallery__item-likes">1350</span>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="gallery__item gallery__item--full">
+            <figure class="gallery__card">
+              <a href="#" class="gallery__item-image-link">
+                <img src="img/photo-2-mobile.jpg" alt="Местная растительность" class="gallery__item-image">
+              </a>
+              <figcaption>
+                <h3 class="gallery__item-title">Местная растительность</h3>
+                <p class="gallery__item-author">Автор фото: Сергей</p>
+                <span class="gallery__item-likes">143</span>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="gallery__item gallery__item--full">
+            <figure class="gallery__card">
+              <a href="#" class="gallery__item-image-link">
+                <img src="img/photo-3-mobile.jpg" alt="Дорога на север" class="gallery__item-image">
+              </a>
+              <figcaption>
+                <h3 class="gallery__item-title">Дорога на север</h3>
+                <p class="gallery__item-author">Автор фото: Петр</p>
+                <span class="gallery__item-likes">96</span>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="gallery__item gallery__item--full">
+            <figure class="gallery__card">
+              <a href="#" class="gallery__item-image-link">
+                <img src="img/photo-4-mobile.jpg" alt="Мост Дьявола" class="gallery__item-image">
+              </a>
+              <figcaption>
+                <h3 class="gallery__item-title">Мост Дьявола</h3>
+                <p class="gallery__item-author">Автор фото: Антон</p>
+                <span class="gallery__item-likes">254</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video">
+        <div class="video__header heading">
+          <h2 class="heading__title">Все еще сомневаетесь?</h2>
+          <p class="heading__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video__container">
+          <img class="video__image" src="img/video-mobile.jpg" alt="Видеоролик">
+          <a class="video__link" href="#"></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p class="main-footer__hashtag">#VISITSEDONA</p>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="social-list__link" target="_blank">
+            <img src="img/social-youtube.svg" alt="Youtube" class="social-list__image">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link" target="_blank">
+            <img src="img/social-tg.svg" alt="Telegram" class="social-list__image">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="social-list__link" target="_blank">
+            <img src="img/social-vk.svg" alt="VK" class="social-list__image">
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright">
+        <p class="main-footer__copyright-text">Разработано</p>
+        <a href="#" class="main-footer__copyright-link" target="_blank">
+          <img class="main-footer__copyright-image" src="img/copyright-image.svg" alt="Разработано Академией">
+        </a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
