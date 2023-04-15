@@ -1,0 +1,44 @@
+.gallery-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery__header {
+  padding: 30px 20px 17px 20px;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__header-title {
+  padding-bottom: 30px;
+}
+
+.gallery__header-title,
+.gallery__header-description {
+  text-align: center;
+}
+
+.gallery__card {
+  margin: 0;
+  padding: 24px 20px 25px 20px;
+}
+
+.gallery__item-image {
+  object-fit: fill;
+}
+
+.gallery__item-title {
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+
+.gallery__item-author {
+  margin: 0;
+  padding-bottom: 17px;
+  text-transform: none;
+}

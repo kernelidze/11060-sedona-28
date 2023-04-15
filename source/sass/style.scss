@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// Базовые свойства
+@import "./global/normalize.scss";
+@import "./global/base.scss";
+@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+
+// Переменные
+@import "./global/variables.scss";
+
+// Блоки компонентов
+@import "./blocks/page.scss";
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/button.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/find-hotel.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/form.scss";
+@import "./blocks/map.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/video.scss";
