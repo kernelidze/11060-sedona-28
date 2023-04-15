@@ -13,8 +13,7 @@
   height: 55px;
 
   background-color: $color-seagull;
-  box-shadow: 0px 1px 0px rgba($color-black, 0.2),
-              inset 0 1px 0 rgba($color-white, 0.2);
+  box-shadow: 0 1px 0 rgba($color-black, 0.2), inset 0 1px 0 rgba($color-white, 0.2);
 }
 
 .site-list__item-link {
