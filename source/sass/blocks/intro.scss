@@ -1,0 +1,22 @@
+.intro {
+  width: 100%;
+  height: 389px;
+
+  text-align: center;
+
+  background: url(../../img/intro-bg-mobile.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--inner {
+    height: 158px;
+  }
+}
+
+.intro__image {
+  padding-top: 90px;
+
+  &--inner {
+    padding-top: 52px;
+  }
+}

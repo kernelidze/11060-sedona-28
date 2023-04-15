@@ -1,0 +1,59 @@
+.form {
+  margin: 0 auto;
+
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+
+  border: none;
+  border-bottom: 1px solid $color-dark-whisper;
+  margin: 0;
+
+  &--username {
+    padding-bottom: 39px;
+  }
+
+  &--contacts {
+    padding-bottom: 34px;
+  }
+
+  &--impressions,
+  &--attractions {
+    padding-bottom: 24px;
+  }
+
+  &--textarea {
+    padding-bottom: 56px;
+    border: none;
+  }
+}
+
+.form__title {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.form__label {
+  text-transform: none;
+}
+
+.form__input,
+.form__textarea {
+  padding: 16px;
+
+  background-color: $color-white-smoke;
+  border: none;
+  resize: none;
+
+  &::placeholder {
+    color: rgba($color-black, 0.3);
+  }
+}
+
+.form__submit-button {
+  width: 280px;
+  height: 58px;
+}

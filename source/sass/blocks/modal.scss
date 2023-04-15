@@ -1,0 +1,36 @@
+.modal {
+  display: none;
+  margin: 0;
+  text-align: center;
+  border: 1px solid black;
+
+  &--success {
+    width: 320px;
+    height: 280px;
+    padding: 45px 42px 35px 41px;
+  }
+
+  &--error {
+    width: 320px;
+    height: 323px;
+    padding: 44px 20px 20px 20px;
+  }
+}
+
+.modal__title {
+  padding-bottom: 20px;
+}
+
+.modal__description {
+  margin: 0;
+}
+
+.button--close-modal-success {
+  width: 180px;
+  height: 58px;
+}
+
+.button--close-modal-error {
+  width: 280px;
+  height: 58px;
+}

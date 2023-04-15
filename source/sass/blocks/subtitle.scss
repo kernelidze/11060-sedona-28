@@ -1,0 +1,16 @@
+.subtitle {
+/*   margin: 0;
+  padding: 0; */
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

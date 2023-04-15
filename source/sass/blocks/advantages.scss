@@ -1,0 +1,55 @@
+.advantages {
+  text-align: center;
+}
+
+.advantages__header {
+  padding: 32px 18px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.advantages__figure {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__image {
+  object-fit: fill;
+  width: 100%;
+  object-fit: cover;
+  max-width: 400px;
+}
+
+.advantages__caption {
+  color: $color-white;
+
+  background-color: $color-seagull;
+}
+
+.advantages__title {
+  padding-top: 37px;
+  padding-bottom: 11px;
+}
+
+.advantages__description {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 40px;
+}
+
+.advantages__item--gray {
+  background-color: $color-whisper;
+}
+
+.advantages__item--housing,
+.advantages__item--eating,
+.advantages__item--souvenirs {
+  margin: 0 auto;
+  padding-left: 47px;
+}
