@@ -1,17 +1,61 @@
 .main-header {
-  min-height: 56px;
   position: relative;
+
+  min-height: 56px;
 }
 
 .main-header__logo {
   position: absolute;
-  left: 50%;
   top: 0;
+  left: 50%;
+
   transform: translate(-50%, 0);
 }
 
 .main-header__toggle {
+  content: "";
   position: absolute;
-  right: 20px;
   top: 17px;
+  right: 20px;
+  z-index: 2;
+
+  width: 23px;
+  height: 4px;
+  overflow: visible;
+
+  background: $color-black;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+  }
+
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 23px;
+    height: 4px;
+
+    background: $color-black;
+  }
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    width: 23px;
+    height: 4px;
+
+    background: $color-black;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

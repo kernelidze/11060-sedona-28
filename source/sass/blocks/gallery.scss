@@ -1,6 +1,15 @@
 .gallery-wrapper {
   margin: 0 auto;
+
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .gallery__header {
@@ -10,7 +19,21 @@
 .gallery__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .gallery__header-title {
@@ -22,23 +45,126 @@
   text-align: center;
 }
 
+.gallery__item {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
+
+    &:nth-child(2n+1):not(:first-child) {
+      margin-right: auto;
+
+      .gallery__card {
+        background-color: $color-darker-whisper;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .gallery__card {
   margin: 0;
   padding: 24px 20px 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 347px;
+    padding: 0;
+
+    background-color: $color-white-smoke;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    height: 267px;
+
+    background-color: $color-white-smoke;
+  }
+}
+
+.gallery__item-legend {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+
+    width: 100%;
+
+    color: $color-white;
+
+    background-color: rgba($color-black, 0.3);
+    transform: translate(-50%);
+  }
 }
 
 .gallery__item-image {
-  object-fit: fill;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-height: 267px;
+
+    object-fit: cover;
+  }
+}
+
+.gallery__item--wide {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+
+    .gallery__card {
+      width: 100%;
+      height: 480px;
+    }
+
+    .gallery__item-image {
+      width: 100%;
+      max-height: 400px;
+
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+
+    .gallery__card {
+      width: 100%;
+      height: 400px;
+    }
+
+    .gallery__item-image {
+      width: 100%;
+      max-height: 400px;
+
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }
 
 .gallery__item-title {
   margin: 0;
-  padding-bottom: 5px;
   padding-top: 15px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .gallery__item-author {
   margin: 0;
   padding-bottom: 17px;
+
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

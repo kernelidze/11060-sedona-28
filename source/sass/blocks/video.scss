@@ -1,5 +1,6 @@
 .video {
   margin: 0 auto;
+
   text-align: center;
 }
 
@@ -13,4 +14,16 @@
 
 .video__description {
   margin: 0;
+}
+
+.video__image {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 685px;
+  }
 }

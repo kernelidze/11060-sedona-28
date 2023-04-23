@@ -1,8 +1,26 @@
 .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   display: none;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
-  border: 1px solid $color-black;
+
+  background-color: rgba($color-black, 0.3);
+
+  &--is-open {
+    display: flex;
+  }
+}
+
+.modal__wrapper {
+  background-color: $color-white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
   &--success {
     width: 320px;
@@ -14,6 +32,7 @@
     width: 320px;
     height: 323px;
     padding: 44px 20px 20px 20px;
+    //background: linear-gradient(to bottom, green 25%, green 25%, black 25%, black 100%);
   }
 }
 

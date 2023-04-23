@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Галерея</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,12 +43,12 @@
           </div>
 
           <ul class="gallery__list">
-            <li class="gallery__item gallery__item--full">
+            <li class="gallery__item gallery__item--wide">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
                   <img class="gallery__item-image" src="img/photo-1-mobile.jpg" alt="Неродные просторы">
                 </a>
-                <figcaption>
+                <figcaption class="gallery__item-legend">
                   <h3 class="gallery__item-title subtitle subtitle--bold">Неродные просторы</h3>
                   <p class="gallery__item-author subtitle">Автор фото: Борис</p>
                   <span class="gallery__item-likes subtitle subtitle--bold">1350</span>
@@ -55,12 +56,12 @@
               </figure>
             </li>
 
-            <li class="gallery__item gallery__item--full">
+            <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img src="img/photo-2-mobile.jpg" alt="Местная растительность" class="gallery__item-image">
+                  <img class="gallery__item-image" src="img/photo-2-mobile.jpg" alt="Местная растительность" class="gallery__item-image">
                 </a>
-                <figcaption>
+                <figcaption class="gallery__item-legend">
                   <h3 class="gallery__item-title subtitle subtitle--bold">Местная растительность</h3>
                   <p class="gallery__item-author subtitle">Автор фото: Сергей</p>
                   <span class="gallery__item-likes subtitle subtitle--bold">143</span>
@@ -68,12 +69,12 @@
               </figure>
             </li>
 
-            <li class="gallery__item gallery__item--full">
+            <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img src="img/photo-3-mobile.jpg" alt="Дорога на север" class="gallery__item-image">
+                  <img class="gallery__item-image" src="img/photo-3-mobile.jpg" alt="Дорога на север" class="gallery__item-image">
                 </a>
-                <figcaption>
+                <figcaption class="gallery__item-legend">
                   <h3 class="gallery__item-title subtitle subtitle--bold">Дорога на север</h3>
                   <p class="gallery__item-author subtitle">Автор фото: Петр</p>
                   <span class="gallery__item-likes subtitle subtitle--bold">96</span>
@@ -81,12 +82,12 @@
               </figure>
             </li>
 
-            <li class="gallery__item gallery__item--full">
+            <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img src="img/photo-4-mobile.jpg" alt="Мост Дьявола" class="gallery__item-image">
+                  <img class="gallery__item-image" src="img/photo-4-mobile.jpg" alt="Мост Дьявола" class="gallery__item-image">
                 </a>
-                <figcaption>
+                <figcaption class="gallery__item-legend">
                   <h3 class="gallery__item-title subtitle subtitle--bold">Мост Дьявола</h3>
                   <p class="gallery__item-author subtitle">Автор фото: Антон</p>
                   <span class="gallery__item-likes subtitle subtitle--bold">254</span>
@@ -103,8 +104,9 @@
               подорожали в очередной раз!</p>
           </div>
           <div class="video__container">
-            <img class="video__image" src="img/video-mobile.jpg" alt="Видеоролик">
-            <a class="video__link" href="#"></a>
+            <a class="video__link" href="#">
+              <img class="video__image" src="img/video-mobile.jpg" alt="Видеоролик">
+            </a>
           </div>
         </section>
       </div>
