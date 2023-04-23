@@ -4,12 +4,14 @@
 
   text-align: center;
 
-  background: url("../../img/intro-bg-mobile.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../../img/intro-triangle.svg"), url("../../img/intro-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+  background-size: contain, cover;
 
   &--inner {
     height: 158px;
+    //background-position: bottom;
   }
 }
 

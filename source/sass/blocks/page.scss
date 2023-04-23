@@ -5,8 +5,9 @@
 
 .page__wrapper {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
 
   background-color: $color-white;
-  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba($color-black, 0.2);
 }
