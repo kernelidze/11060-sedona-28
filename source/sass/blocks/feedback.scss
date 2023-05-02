@@ -2,8 +2,31 @@
   padding: 36px 20px 20px 28px;
 
   text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $color-dark-whisper;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 64px 0 108px;
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 0 68px;
+    width: 435px;
+  }
 }
 
-.feedback__description {
-  padding-top: 24px;
+.feedback__title {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 31px;
+  }
 }

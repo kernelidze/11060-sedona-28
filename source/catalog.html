@@ -39,7 +39,8 @@
         <section class="gallery">
           <div class="gallery__header">
             <h2 class="gallery__header-title title">Фото и видео</h2>
-            <div class="gallery__header-description subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</div>
+            <div class="gallery__header-description subtitle">Не можете решиться на путешествие из-за курса? Фотографии
+              помогут вам забыть о политике и экономике.</div>
           </div>
 
           <ul class="gallery__list">
@@ -49,8 +50,10 @@
                   <img class="gallery__item-image" src="img/photo-1-mobile.jpg" alt="Неродные просторы">
                 </a>
                 <figcaption class="gallery__item-legend">
-                  <h3 class="gallery__item-title subtitle subtitle--bold">Неродные просторы</h3>
-                  <p class="gallery__item-author subtitle">Автор фото: Борис</p>
+                  <div class="gallery__text-wrapper">
+                    <h3 class="gallery__item-title subtitle subtitle--bold">Неродные просторы</h3>
+                    <p class="gallery__item-author subtitle">Автор фото: Борис</p>
+                  </div>
                   <span class="gallery__item-likes subtitle subtitle--bold">1350</span>
                 </figcaption>
               </figure>
@@ -59,11 +62,14 @@
             <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img class="gallery__item-image" src="img/photo-2-mobile.jpg" alt="Местная растительность" class="gallery__item-image">
+                  <img class="gallery__item-image" src="img/photo-2-mobile.jpg" alt="Местная растительность"
+                    class="gallery__item-image">
                 </a>
                 <figcaption class="gallery__item-legend">
-                  <h3 class="gallery__item-title subtitle subtitle--bold">Местная растительность</h3>
-                  <p class="gallery__item-author subtitle">Автор фото: Сергей</p>
+                  <div class="gallery__text-wrapper">
+                    <h3 class="gallery__item-title subtitle subtitle--bold">Местная растительность</h3>
+                    <p class="gallery__item-author subtitle">Автор фото: Сергей</p>
+                  </div>
                   <span class="gallery__item-likes subtitle subtitle--bold">143</span>
                 </figcaption>
               </figure>
@@ -72,11 +78,14 @@
             <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img class="gallery__item-image" src="img/photo-3-mobile.jpg" alt="Дорога на север" class="gallery__item-image">
+                  <img class="gallery__item-image" src="img/photo-3-mobile.jpg" alt="Дорога на север"
+                    class="gallery__item-image">
                 </a>
                 <figcaption class="gallery__item-legend">
-                  <h3 class="gallery__item-title subtitle subtitle--bold">Дорога на север</h3>
-                  <p class="gallery__item-author subtitle">Автор фото: Петр</p>
+                  <div class="gallery__text-wrapper">
+                    <h3 class="gallery__item-title subtitle subtitle--bold">Дорога на север</h3>
+                    <p class="gallery__item-author subtitle">Автор фото: Петр</p>
+                  </div>
                   <span class="gallery__item-likes subtitle subtitle--bold">96</span>
                 </figcaption>
               </figure>
@@ -85,11 +94,14 @@
             <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img class="gallery__item-image" src="img/photo-4-mobile.jpg" alt="Мост Дьявола" class="gallery__item-image">
+                  <img class="gallery__item-image" src="img/photo-4-mobile.jpg" alt="Мост Дьявола"
+                    class="gallery__item-image">
                 </a>
                 <figcaption class="gallery__item-legend">
-                  <h3 class="gallery__item-title subtitle subtitle--bold">Мост Дьявола</h3>
-                  <p class="gallery__item-author subtitle">Автор фото: Антон</p>
+                  <div class="gallery__text-wrapper">
+                    <h3 class="gallery__item-title subtitle subtitle--bold">Мост Дьявола</h3>
+                    <p class="gallery__item-author subtitle">Автор фото: Антон</p>
+                  </div>
                   <span class="gallery__item-likes subtitle subtitle--bold">254</span>
                 </figcaption>
               </figure>
@@ -104,9 +116,8 @@
               подорожали в очередной раз!</p>
           </div>
           <div class="video__container">
-            <a class="video__link" href="#">
-              <img class="video__image" src="img/video-mobile.jpg" alt="Видеоролик">
-            </a>
+            <img class="video__image" src="img/video-mobile.jpg" alt="Видеоролик">
+            <button class="video__play-button"></button>
           </div>
         </section>
       </div>
@@ -116,29 +127,29 @@
       <p class="main-footer__hashtag">#VISITSEDONA</p>
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link" target="_blank">
-            <img src="img/social-youtube.svg" alt="Youtube" class="social-list__image">
+          <a href="#" class="social-list__link button" target="_blank">
+            <img src="img/social-vk.svg" alt="Youtube" class="social-list__image">
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link" target="_blank">
+          <a href="#" class="social-list__link button" target="_blank">
             <img src="img/social-tg.svg" alt="Telegram" class="social-list__image">
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link" target="_blank">
-            <img src="img/social-vk.svg" alt="VK" class="social-list__image">
+          <a href="#" class="social-list__link button" target="_blank">
+            <img src="img/social-youtube.svg" alt="VK" class="social-list__image">
           </a>
         </li>
       </ul>
       <div class="main-footer__copyright">
-        <p class="main-footer__copyright-text">Разработано</p>
-        <a href="#" class="main-footer__copyright-link" target="_blank">
+        <a href="#" class="main-footer__copyright-link" target="_blank">Разработано
           <img class="main-footer__copyright-image" src="img/copyright-image.svg" alt="Разработано Академией">
         </a>
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

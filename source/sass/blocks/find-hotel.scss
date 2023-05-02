@@ -1,8 +1,15 @@
 .find-hotel {
   margin: 0;
-  padding-top: 38px;
-  padding-bottom: 49px;
+  padding: 38px 18px 49px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 155px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 371px 66px;
+  }
 }
 
 .find-hotel__title {
@@ -11,6 +18,10 @@
 
 .find-hotel__description {
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 44px;
+  }
 }
 
 .find-hotel__button {
