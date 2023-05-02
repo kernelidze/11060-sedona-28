@@ -5,15 +5,50 @@
 }
 
 .video__header {
-  padding: 17px 20px 38px 20px;
+  padding: 17px 20px 38px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 0 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 377px 68px;
+  }
 }
 
 .video__title {
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__description {
-  margin: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+  }
+}
+
+.video__container {
+  position: relative;
+}
+
+.video__play-button {
+  position: absolute;
+  content: '';
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  width: 48px;
+  height: 54px;
+  background-color: rgba($color-white, 0.5);
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
 }
 
 .video__image {

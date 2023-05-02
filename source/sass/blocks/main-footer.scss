@@ -10,11 +10,14 @@
     min-height: 120px;
     padding: 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .main-footer__hashtag {
   margin: 0;
-  padding-bottom: 30px;
 
   font-weight: 700;
   font-size: 21px;
@@ -25,19 +28,17 @@
   }
 }
 
-.main-footer__copyright {
+.main-footer__copyright-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
+  font-size: 14px;
+  line-height: 21px;
   column-gap: 12px;
+  color: $color-black;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
-}
-
-.main-footer__copyright-text {
-  font-size: 14px;
-  line-height: 21px;
 }

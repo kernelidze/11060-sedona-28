@@ -1,24 +1,79 @@
 .intro {
+  position: relative;
+
   width: 100%;
   height: 389px;
+  overflow: hidden;
 
   text-align: center;
 
-  background-image: url("../../img/intro-triangle.svg"), url("../../img/intro-bg-mobile.jpg");
+  background-image: url("../../img/intro-bg-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: bottom, center;
-  background-size: contain, cover;
+  background-position: center;
+  background-size: cover;
+
+  /* &::before {
+    content: url("../../img/intro-slogan.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+  &::after {
+    content: url("../../img/intro-triangle.svg");
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+  }
 
   &--inner {
     height: 158px;
     //background-position: bottom;
+
+    @media (min-width: $tablet-width) {
+      height: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 301px;
+    }
   }
 }
 
 .intro__image {
   padding-top: 90px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
+  }
+
   &--inner {
     padding-top: 52px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 95px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 101px;
+    }
   }
 }
