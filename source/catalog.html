@@ -32,7 +32,8 @@
       <h1 class="visually-hidden">Галерея городка Седоны.</h1>
       <section class="intro intro--inner">
         <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-        <img class="intro__image intro__image--inner" src="img/title-Sedona.svg" width="229" height="39" alt="Sedona.">
+        <img class="intro__slogan intro__slogan--inner" src="img/title-sedona.svg" width="229" height="39"
+          alt="Sedona.">
       </section>
 
       <div class="gallery-wrapper">
@@ -47,7 +48,14 @@
             <li class="gallery__item gallery__item--wide">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img class="gallery__item-image" src="img/photo-1-mobile.jpg" alt="Неродные просторы">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
+                    <img class="gallery__item-image" width="280" height="280" src="img/gallery/photo-1-mobile.jpg"
+                      srcset="img/gallery/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+                  </picture>
                 </a>
                 <figcaption class="gallery__item-legend">
                   <div class="gallery__text-wrapper">
@@ -62,8 +70,15 @@
             <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img class="gallery__item-image" src="img/photo-2-mobile.jpg" alt="Местная растительность"
-                    class="gallery__item-image">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
+                    <img class="gallery__item-image" width="280" height="280" src="img/gallery/photo-2-mobile.jpg"
+                      srcset="img/gallery/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+                  </picture>
+
                 </a>
                 <figcaption class="gallery__item-legend">
                   <div class="gallery__text-wrapper">
@@ -78,8 +93,14 @@
             <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img class="gallery__item-image" src="img/photo-3-mobile.jpg" alt="Дорога на север"
-                    class="gallery__item-image">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
+                    <img class="gallery__item-image" width="280" height="280" src="img/gallery/photo-3-mobile.jpg"
+                      srcset="img/gallery/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+                  </picture>
                 </a>
                 <figcaption class="gallery__item-legend">
                   <div class="gallery__text-wrapper">
@@ -94,8 +115,14 @@
             <li class="gallery__item">
               <figure class="gallery__card">
                 <a href="#" class="gallery__item-image-link">
-                  <img class="gallery__item-image" src="img/photo-4-mobile.jpg" alt="Мост Дьявола"
-                    class="gallery__item-image">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
+                    <img class="gallery__item-image" width="280" height="280" src="img/gallery/photo-4-mobile.jpg"
+                      srcset="img/gallery/photo-3-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                  </picture>
                 </a>
                 <figcaption class="gallery__item-legend">
                   <div class="gallery__text-wrapper">
@@ -116,7 +143,14 @@
               подорожали в очередной раз!</p>
           </div>
           <div class="video__container">
-            <img class="video__image" src="img/video-mobile.jpg" alt="Видеоролик">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet@2x.jpg 2x">
+              <img class="video__image" width="280" height="177" src="img/gallery/video-mobile.jpg"
+                srcset="img/gallery/video-mobile@2x.jpg 2x" alt="Видеоролик">
+            </picture>
             <button class="video__play-button"></button>
           </div>
         </section>
