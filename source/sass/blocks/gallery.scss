@@ -13,19 +13,40 @@
 }
 
 .gallery__header {
-  padding: 37px 20px 47px;
+  padding: 37px 20px 36px;
 
   border-bottom: 1px solid $color-dark-whisper;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 155px 84px;
+    padding: 60px 0 86px;
 
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 371px 86px;
+    padding: 98px 371px 88px;
   }
+}
+
+.gallery__header-title {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+}
+
+.gallery__header-description {
+  @media(min-width: $tablet-width) {
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+
+.gallery__header-title,
+.gallery__header-description {
+  text-align: center;
 }
 
 .gallery__list {
@@ -46,19 +67,6 @@
 
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-.gallery__header-title {
-  padding-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-  }
-}
-
-.gallery__header-title,
-.gallery__header-description {
-  text-align: center;
 }
 
 .gallery__item {
@@ -85,7 +93,7 @@
 
 .gallery__card {
   margin: 0;
-  padding: 24px 20px 25px;
+  padding: 24px 20px 24px;
 
   border-bottom: 1px solid $color-dark-whisper;
 
@@ -118,7 +126,7 @@
 
 .gallery__text-wrapper {
   @media (min-width: $tablet-width) {
-    padding-left: 21px;
+    padding-left: 20px;
     padding-top: 22px;
     padding-bottom: 15px;
   }
@@ -128,6 +136,15 @@
     padding-top: 17px;
     padding-bottom: 17px;
   }
+
+  .gallery__item--wide & {
+    @media (min-width: $desktop-width) {
+      padding-left: 21px;
+      padding-top: 22px;
+      padding-bottom: 15px;
+    }
+  }
+
 }
 
 .gallery__item-legend {
@@ -161,23 +178,25 @@
   &::before {
     content: '';
     position: absolute;
-    background-image: url('../../img/like-icon.svg');
-    top: -4px;
+    background-image: url('../../img/svg/icon-like.svg');
+    top: -7px;
     left: 0;
     width: 23px;
     height: 21px;
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
+      top: -5px;
       left: 6px;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url('../../img/like-icon-white.svg');
+      background-image: url('../../img/svg/icon-like-white.svg');
     }
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 5px;
     padding-right: 20px;
   }
 }
@@ -214,12 +233,19 @@
 }
 
 .gallery__item-title {
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin: 0;
+    margin-bottom: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
+
+    .gallery__item--wide & {
+      margin: 0;
+    }
   }
 }
 

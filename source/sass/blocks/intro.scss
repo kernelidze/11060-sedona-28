@@ -12,16 +12,8 @@
   background-position: center;
   background-size: cover;
 
-/*   &::before {
-    content: url("../../img/intro-slogan.svg");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
-
   &::after {
-    content: url("../../img/intro-triangle.svg");
+    content: url("../../img/svg/intro-triangle.svg");
     position: absolute;
     bottom: -5px;
     left: 50%;
