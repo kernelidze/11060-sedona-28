@@ -6,9 +6,25 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: $color-white;
+  text-transform: uppercase;
 
   background-color: $color-seagull;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+
+    background-color: $color-dark-shakespeare;
+  }
+
+  &:disabled {
+    background-color: $color-dark-whisper;
+  }
 }

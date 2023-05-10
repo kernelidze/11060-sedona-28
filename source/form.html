@@ -12,18 +12,20 @@
   <div class="page__wrapper">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img src="img/logo.svg" alt="Логотип Седоны." class="main-header__logo-image" width="185" height="96">
+        <svg width="185" height="96">
+          <use href="img/sprite.svg#logo">
+        </svg>
       </a>
       <button class="main-header__toggle">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
       </button>
       <nav class="navigation">
-        <ul class="navigation__list site-list">
-          <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Фото и видео</a></li>
-          <li class="site-list__item site-list__item--current"><a class="site-list__item-link" href="form.html">Форма
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__item-link" href="index.html">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="catalog.html">Фото и видео</a></li>
+          <li class="navigation__item navigation__item--current"><a class="navigation__item-link" href="form.html">Форма
               отзыва</a></li>
-          <li class="site-list__item"><a class="site-list__item-link" href="#">HTML Academy</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +34,8 @@
       <h1 class="visually-hidden">Форма отзыва о Седоне.</h1>
       <section class="intro intro--inner">
         <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-        <img class="intro__slogan intro__slogan--inner" src="img/title-sedona.svg" width="229" height="39" alt="Sedona.">
+        <img class="intro__slogan intro__slogan--inner" src="img/svg/intro-sedona.svg" width="229" height="39"
+          alt="Sedona.">
       </section>
 
       <div class="main-container__wrapper">
@@ -46,7 +49,7 @@
 
           <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="form__mini-wrapper">
-              <h3 class="form__title title">Представьтесь</h3>
+              <h3 class="form__title title">Представьтесь:</h3>
               <fieldset class="form__fieldset form__fieldset--user">
 
                 <label class="form__label" for="add-feedback-name">
@@ -68,7 +71,7 @@
                 </label>
               </fieldset>
 
-              <h3 class="form__title title">Контактная информация</h3>
+              <h3 class="form__title title">Контактная информация:</h3>
 
               <fieldset class="form__fieldset form__fieldset--contacts">
 
@@ -148,14 +151,14 @@
             <fieldset class="form__fieldset form__fieldset--textarea">
               <label class="form__label" for="add-feedback-emotions">
                 <span class="visually-hidden">Ваши эмоции в текстовой форме</span>
-                <textarea class="form__textarea title" id="add-feedback-emotions" name="feedback-emotions" rows="7"
+                <textarea class="form__textarea title" id="add-feedback-emotions" name="feedback-emotions"
                   placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
             </fieldset>
 
             <div class="form__submit-wrapper">
               <button class="form__submit-button button" type="submit">Отправить отзыв</button>
-              <small class="form__submit-legend">*-обязательные поля</small>
+              <small class="form__submit-legend">* — обязательные поля</small>
             </div>
           </form>
         </section>
@@ -168,43 +171,51 @@
       <ul class="social-list">
         <li class="social-list__item">
           <a href="#" class="social-list__link button" target="_blank">
-            <img src="img/social-vk.svg" alt="Youtube" class="social-list__image">
+            <svg class="social__vk" width="24" height="24">
+              <use href="img/sprite.svg#social-vk">
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="social-list__link button" target="_blank">
-            <img src="img/social-tg.svg" alt="Telegram" class="social-list__image">
+            <svg class="social__tg" width="24" height="24">
+              <use href="img/sprite.svg#social-tg">
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="social-list__link button" target="_blank">
-            <img src="img/social-youtube.svg" alt="VK" class="social-list__image">
+            <svg class="social__youtube" width="20" height="14">
+              <use href="img/sprite.svg#social-youtube">
+            </svg>
           </a>
         </li>
       </ul>
       <div class="main-footer__copyright">
         <a href="#" class="main-footer__copyright-link" target="_blank">Разработано
-          <img class="main-footer__copyright-image" src="img/copyright-image.svg" alt="Разработано Академией">
+          <svg class="main-footer__copyright-image" width="28" height="35">
+            <use href="img/sprite.svg#icon-copyright">
+          </svg>
         </a>
       </div>
     </footer>
 
-    <div class="modal">
-      <div class="modal__wrapper modal__wrapper--success">
+    <div class="modal modal--error">
+      <div class="modal__wrapper modal__wrapper--error">
         <h2 class="modal__title title">Что-то пошло не так!</h2>
         <p class="modal__description subtitle">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <a class="button button--close-modal-success" href="#">OK</a>
+        <a class="button button--close-modal-error" href="#">OK</a>
       </div>
     </div>
 
-    <div class="modal">
-      <div class="modal__wrapper modal__wrapper--error">
-        <h2 class="modal__title title">Ваш отзыв отправлен</h2>
-        <p class="modal__description subtitle">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+    <div class="modal modal--success">
+      <div class="modal__wrapper modal__wrapper--success">
+        <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
+        <p class="modal__description modal__description--success subtitle">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время
           мы
           опубликуем его на сайте.</p>
-        <a class="button button--close-modal-error" href="#">Закрыть окно</a>
+        <a class="button button--close-modal-success" href="#">Закрыть окно</a>
       </div>
     </div>
   </div>

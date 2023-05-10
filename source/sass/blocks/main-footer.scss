@@ -35,10 +35,18 @@
 
   font-size: 14px;
   line-height: 21px;
-  column-gap: 12px;
   color: $color-black;
+  column-gap: 12px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  &:hover {
+    color: $color-seagull;
+  }
+
+  &:active {
+    color: $color-pink-swan;
   }
 }
