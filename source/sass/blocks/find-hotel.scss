@@ -1,6 +1,7 @@
 .find-hotel {
   margin: 0;
   padding: 40px 18px 49px;
+
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +25,6 @@
     font-size: 30px;
     line-height: 26px;
   }
-
 }
 
 .find-hotel__description {

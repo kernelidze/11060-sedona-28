@@ -33,12 +33,14 @@
   }
 
   &--inner {
-    background-size: auto;
-    background-position: bottom center;
     height: 158px;
+
+    background-position: bottom center;
+    background-size: auto;
 
     @media (min-width: $tablet-width) {
       height: 290px;
+
       background-size: 1200px auto;
     }
 
@@ -52,8 +54,8 @@
   padding-top: 90px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 77px;
     width: 461px;
+    padding-top: 77px;
   }
 
   @media (min-width: $desktop-width) {

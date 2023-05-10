@@ -2,11 +2,11 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-family: "PT Sans", "Arial", sans-serif;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: $color-white;
   text-transform: uppercase;
 
@@ -19,8 +19,9 @@
   }
 
   &:active {
-    background-color: $color-dark-shakespeare;
     color: rgba($color-white, 0.3);
+
+    background-color: $color-dark-shakespeare;
   }
 
   &:disabled {

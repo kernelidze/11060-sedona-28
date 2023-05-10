@@ -35,15 +35,13 @@
 
   font-size: 14px;
   line-height: 21px;
-  column-gap: 12px;
   color: $color-black;
+  column-gap: 12px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
-}
 
-.main-footer__copyright-link {
   &:hover {
     color: $color-seagull;
   }

@@ -3,9 +3,9 @@
 }
 
 .advantages__header {
+  width: 270px;
   margin: 0 auto;
   padding: 33px 0;
-  width: 270px;
 
   @media (min-width: $tablet-width) {
     width: 520px;
@@ -43,6 +43,8 @@
 .advantages__title {
   @media (min-width: $tablet-width) {
     width: 150px;
+    max-width: 178px;
+    margin: 0 auto;
   }
 }
 
@@ -82,8 +84,8 @@
     }
 
     & .advantages__description {
-      margin: 0 auto;
       width: 247px;
+      margin: 0 auto;
     }
   }
 
@@ -98,26 +100,19 @@
 
 .advantages__item:nth-child(7) .advantages__description {
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     width: 180px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
     width: 270px;
+    margin: 0 auto;
   }
 }
 
 .advantages__item--wide {
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
-  }
-}
-
-.advantages__title {
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    max-width: 178px;
   }
 }
 
@@ -134,8 +129,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    text-align: center;
     margin: 0 auto;
+
+    text-align: center;
 
     .advantages__title {
       margin-top: 0;
@@ -153,6 +149,7 @@
 
 .advantages__description-wrap {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
@@ -162,13 +159,13 @@
   padding: 23px 18px 25px 65px;
 
   @media (min-width: $tablet-width) {
-    padding: 158px 0 60px;
     width: 170px;
+    padding: 158px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 169px 0 69px;
     width: 300px;
+    padding: 169px 0 69px;
   }
 }
 
@@ -176,13 +173,13 @@
   padding: 0 18px 0 65px;
 
   @media (min-width: $tablet-width) {
-    padding: 156px 0 60px;
     width: 155px;
+    padding: 156px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 166px 0 71px;
     width: 300px;
+    padding: 166px 0 71px;
   }
 }
 
@@ -190,13 +187,13 @@
   padding: 25px 18px 46px 65px;
 
   @media (min-width: $tablet-width) {
-    padding: 153px 0 60px;
     width: 170px;
+    padding: 153px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 170px 0 67px;
     width: 300px;
+    padding: 170px 0 67px;
   }
 }
 
@@ -292,6 +289,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+
     background-color: $color-seagull;
 
     grid-template-columns: 1fr 2fr;
@@ -314,12 +312,11 @@
   }
 }
 
-
-
 .advantages__caption {
   padding: 37px 18px;
 
   color: $color-white;
+
   background-color: $color-seagull;
 
   &--triangle {

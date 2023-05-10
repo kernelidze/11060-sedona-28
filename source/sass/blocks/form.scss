@@ -128,14 +128,15 @@
   }
 
   &--impressions {
-    padding: 19px 20px 21px;
     display: grid;
+    padding: 19px 20px 21px;
+
     grid-template-columns: 1fr;
     row-gap: 12px;
 
     @media (min-width: $tablet-width) {
-      padding: 27px 20px 45px;
       justify-content: center;
+      padding: 27px 20px 45px;
 
       column-gap: 16px;
 
@@ -146,22 +147,23 @@
     @media (min-width: $desktop-width) {
       padding: 44px 0 71px;
       padding-left: 40px;
+
       column-gap: 28px;
 
       grid-template-columns: 280px 280px 280px;
-
     }
   }
 
   &--attractions {
-    padding: 20px 20px 20px;
     display: grid;
+    padding: 20px 20px 20px;
+
     grid-template-columns: 1fr;
     row-gap: 12px;
 
     @media (min-width: $tablet-width) {
-      padding: 27px 20px 40px;
       justify-content: center;
+      padding: 27px 20px 40px;
 
       column-gap: 32px;
 
@@ -171,6 +173,7 @@
 
     @media (min-width: $desktop-width) {
       padding: 58px 0 85px;
+
       column-gap: 64px;
 
       grid-template-columns: max-content max-content max-content max-content;
@@ -204,9 +207,10 @@
 .form__textarea {
   padding: 16px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
+
   background-color: $color-white-smoke;
   border: none;
-  font-family: "PT Sans", "Arial", sans-serif;
 
   resize: none;
 
@@ -275,7 +279,7 @@ textarea {
 
   @media (min-width: $tablet-width) {
     .form__fieldset--impressions &,
-    .form__fieldset--attractions &{
+    .form__fieldset--attractions & {
       padding: 0;
     }
   }
@@ -324,8 +328,9 @@ textarea {
   font-size: 12px;
 
   @media (min-width: $tablet-width) {
-    font-size: 14px;
     padding-top: 7px;
+
+    font-size: 14px;
   }
 }
 
@@ -340,8 +345,9 @@ textarea {
 .form__label--radio,
 .form__label--checkbox {
   display: grid;
-  grid-template-columns: min-content 1fr;
   align-items: center;
+
+  grid-template-columns: min-content 1fr;
 }
 
 .form__icon {
@@ -373,7 +379,7 @@ textarea {
 }
 
 .form__radio:hover + .form__icon::before,
-.form__checkbox:hover + .form__icon::before{
+.form__checkbox:hover + .form__icon::before {
   background-color: $color-dark-whisper;
 }
 
