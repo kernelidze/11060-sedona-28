@@ -31,6 +31,8 @@
 .gallery__header-title {
   margin-bottom: 26px;
 
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
 
@@ -39,16 +41,12 @@
 }
 
 .gallery__header-description {
-  
-  @media(min-width: $tablet-width) {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
     width: 440px;
     margin: 0 auto;
   }
-}
-
-.gallery__header-title,
-.gallery__header-description {
-  text-align: center;
 }
 
 .gallery__list {
