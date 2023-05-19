@@ -10,8 +10,8 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import del from 'del';
+import {stacksvg} from 'gulp-stacksvg';
 
 //HTML
 
@@ -41,6 +41,7 @@ export const styles = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -71,18 +72,14 @@ const createWebp = () => {
 //SVG
 
 const svg = () => {
-  return gulp.src('source/img/svg/*.svg')
+    return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
-    .pipe(gulp.dest('build/img/svg'));
+    .pipe(gulp.dest('build/img'));
 }
 
 const sprite = () => {
   return gulp.src('source/img/svg/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
+    .pipe(stacksvg())
     .pipe(gulp.dest('build/img'));
 }
 
@@ -122,7 +119,7 @@ const server = (done) => {
 
 // Reload
 
-const reload = () => {
+const reload = (done) => {
   browser.reload();
   done();
 }
@@ -132,7 +129,6 @@ const reload = () => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  //gulp.watch('source/*.html').on('change', browser.reload);
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 

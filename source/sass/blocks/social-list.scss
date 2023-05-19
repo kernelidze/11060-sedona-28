@@ -1,11 +1,15 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
+  min-width: 159px;
+
   justify-content: center;
   margin: 0;
-  padding: 30px 0 40px;
+  padding: 30px 0 30px;
 
   list-style-type: none;
   column-gap: 6px;
+  row-gap: 6px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -15,8 +19,29 @@
 .social-list__link {
   width: 48px;
   height: 48px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--vk::before {
+    width: 24px;
+    height: 24px;
+    background: url("../img/stack.svg#social-vk") no-repeat center / contain;
+  }
+
+  &--tg::before {
+    background: url("../img/stack.svg#social-tg") no-repeat center / contain;
+  }
+
+  &--youtube::before {
+    background: url("../img/stack.svg#social-youtube") no-repeat center / contain;
+  }
 }
 
-.social-list__link:active svg {
+.social-list__link:active::before {
   opacity: 0.3;
 }
