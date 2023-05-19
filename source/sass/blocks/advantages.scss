@@ -5,7 +5,7 @@
 .advantages__header {
   width: 270px;
   margin: 0 auto;
-  padding: 33px 0;
+  padding: 33px 0 30px;
 
   @media (min-width: $tablet-width) {
     width: 520px;
@@ -20,7 +20,7 @@
 }
 
 .advantages__header-title {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -98,6 +98,13 @@
   }
 }
 
+.advantages__item:nth-child(1) .advantages__description {
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
 .advantages__item:nth-child(7) .advantages__description {
   @media (min-width: $tablet-width) {
     width: 180px;
@@ -155,6 +162,14 @@
   }
 }
 
+.advantages__description-wrap-blue {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .advantages__item--housing {
   padding: 23px 18px 25px 65px;
 
@@ -206,7 +221,7 @@
   width: 39px;
   height: 37px;
 
-  background: url("../../img/svg/icon-house.svg") no-repeat;
+  background: url("../../img/stack.svg#icon-house") no-repeat;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
@@ -236,7 +251,7 @@
   width: 40px;
   height: 35px;
 
-  background: url("../../img/svg/icon-burger.svg") no-repeat;
+  background: url("../../img/stack.svg#icon-burger") no-repeat;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
@@ -263,12 +278,12 @@
   width: 32px;
   height: 38px;
 
-  background: url("../../img/svg/icon-gift.svg") no-repeat;
+  background: url("../../img/stack.svg#icon-gift") no-repeat;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
     top: 64px;
-    left: 50%;
+    left: 52%;
 
     width: 66px;
     height: 75px;
@@ -278,6 +293,7 @@
 
   @media (min-width: $desktop-width) {
     top: 69px;
+    left: 50%;
 
     transform: translateX(-50%) scaleX(1.22);
   }
@@ -303,12 +319,13 @@
 .advantages__image {
   display: block;
   width: 100%;
-  height: 260px;
+  min-height: 100%;
+  max-height: 260px;
 
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
-    height: 256px;
+    max-height: 256px;
   }
 }
 
@@ -320,7 +337,7 @@
   background-color: $color-seagull;
 
   &--triangle {
-    clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 9%, 100% 3%, 100% 100%, 0 100%, 0 3%);
 
     @media (min-width: $tablet-width) {
       clip-path: none;
@@ -333,7 +350,7 @@
 
   @media (max-width: $mobile-width-only) {
     &--triangle {
-      padding: 54px 18px 40px;
+      padding: 54px 17px 40px;
     }
   }
 

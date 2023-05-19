@@ -43,7 +43,7 @@
 
 .find-hotel__button {
   width: 284px;
-  height: 58px;
+  min-height: 58px;
 
   @media (min-width: $tablet-width) {
     width: 458px;

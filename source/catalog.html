@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Галерея</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <svg width="185" height="96">
-          <use href="img/sprite.svg#logo">
-        </svg>
+        <img src="img/content/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <button class="main-header__toggle">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
@@ -26,7 +26,7 @@
               href="catalog.html">Фото
               и видео</a></li>
           <li class="navigation__item"><a class="navigation__item-link" href="form.html">Форма отзыва</a></li>
-          <li class="navigation__item"><a class="navigation__item-link" href="#">HTML Academy</a></li>
+          <li class="navigation__item"><a class="navigation__item-link" href="www.htmlacademy.ru" target="_blank">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
@@ -35,7 +35,7 @@
       <h1 class="visually-hidden">Галерея городка Седоны.</h1>
       <section class="intro intro--inner">
         <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-        <img class="intro__slogan intro__slogan--inner" src="img/svg/intro-sedona.svg" width="229" height="39"
+        <img class="intro__slogan intro__slogan--inner" src="img/content/intro-sedona.svg" width="229" height="39"
           alt="Sedona.">
       </section>
 
@@ -49,7 +49,7 @@
 
           <ul class="gallery__list">
             <li class="gallery__item gallery__item--wide">
-              <figure class="gallery__card">
+              <figure class="gallery__card gallery__card--wide">
                 <a href="#" class="gallery__item-image-link">
                   <picture>
                     <source media="(min-width: 1200px)"
@@ -164,37 +164,20 @@
       <p class="main-footer__hashtag">#VISITSEDONA</p>
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link button" target="_blank">
-            <svg class="social__vk" width="24" height="24">
-              <use href="img/sprite.svg#social-vk">
-            </svg>
-          </a>
+          <a href="#" class="social-list__link social-list__link--vk button" target="_blank"></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link button" target="_blank">
-            <svg class="social__tg" width="24" height="24">
-              <use href="img/sprite.svg#social-tg">
-            </svg>
-          </a>
+          <a href="#" class="social-list__link social-list__link--tg button" target="_blank"></a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link button" target="_blank">
-            <svg class="social__youtube" width="20" height="14">
-              <use href="img/sprite.svg#social-youtube">
-            </svg>
-          </a>
+          <a href="#" class="social-list__link social-list__link--youtube button" target="_blank"></a>
         </li>
       </ul>
-      <div class="main-footer__copyright">
-        <a href="#" class="main-footer__copyright-link" target="_blank">Разработано
-          <svg class="main-footer__copyright-image" width="28" height="35">
-            <use href="img/sprite.svg#icon-copyright">
-          </svg>
-        </a>
-      </div>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__copyright-link"
+        target="_blank">Разработано</a>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

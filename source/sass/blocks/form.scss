@@ -9,17 +9,35 @@
 
 .form__mini-wrapper {
   @media (min-width: $tablet-width) {
+    position: relative;
+
     display: grid;
 
     column-gap: 58px;
 
     grid-template-columns: 1fr 1fr;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 1px;
+      height: calc(100% - 55px);
+
+      background-color: $color-gainsboro;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
 
     column-gap: 100px;
+
+    &::before {
+      height: calc(100% - 63px);
+    }
   }
 }
 
@@ -91,22 +109,6 @@
       padding: 28px 0 63px;
 
       grid-row: 2/3;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: -28px;
-        right: -28px;
-
-        width: 1px;
-        height: calc(100% - 23px);
-
-        background-color: $color-gainsboro;
-
-        @media (min-width: $desktop-width) {
-          right: -50px;
-        }
-      }
     }
 
     @media (min-width: $desktop-width) {
@@ -173,11 +175,11 @@
     }
 
     @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      width: 871px;
+      margin: 0 auto;
       padding: 58px 0 85px;
-
-      column-gap: 64px;
-
-      grid-template-columns: max-content max-content max-content max-content;
     }
   }
 
@@ -218,6 +220,8 @@
   &::placeholder {
     font-size: 18px;
     color: rgba($color-black, 0.3);
+
+    opacity: 1;
   }
 
   &:hover {
@@ -253,25 +257,29 @@ textarea {
   &::after {
     content: "";
     position: absolute;
-    top: 22px;
     right: 0;
+    bottom: 0;
 
     width: 58px;
     height: 58px;
+  }
+
+  & input {
+    padding-right: 76px;
   }
 }
 
 .form__label--phone {
   &::after {
-    position: absolute;
+    bottom: 14px;
 
-    background-image: url("../../img/svg/phone.svg");
+    background-image: url("../../img/stack.svg#phone");
   }
 }
 
 .form__label--email {
   &::after {
-    background-image: url("../../img/svg/mail.svg");
+    background-image: url("../../img/stack.svg#mail");
   }
 }
 
@@ -314,14 +322,14 @@ textarea {
 
 .form__submit-button {
   width: 280px;
-  height: 58px;
+  min-height: 58px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    min-width: 324px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 384px;
+    min-width: 384px;
   }
 }
 
@@ -386,6 +394,21 @@ textarea {
 
 .form__radio:checked + .form__icon::before,
 .form__checkbox:checked + .form__icon::before {
+  background-color: $color-white-smoke;
+}
+
+.form__radio:checked:hover + .form__icon::before,
+.form__checkbox:checked:hover + .form__icon::before {
+  background-color: $color-dark-whisper;
+}
+
+.form__radio:active + .form__icon::before,
+.form__checkbox:active + .form__icon::before {
+  background-color: $color-lighter-grey;
+}
+
+.form__radio:checked:active + .form__icon::before,
+.form__checkbox:checked:active + .form__icon::before {
   background-color: $color-lighter-grey;
 }
 
@@ -417,7 +440,7 @@ textarea {
   width: 22px;
   height: 16px;
 
-  background: url("../../img/svg/tick.svg");
+  background: url("../../img/stack.svg#tick");
 }
 
 .form__checkbox:active:checked + .form__icon::after {

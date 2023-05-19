@@ -49,4 +49,22 @@
   &:active {
     color: $color-pink-swan;
   }
+
+  &::after {
+    content: "";
+    display: flex;
+    flex-shrink: 0;
+    width: 28px;
+    height: 35px;
+    mask: url("../img/stack.svg#icon-copyright");
+    background-color: $color-black;
+  }
+
+  &:hover::after {
+    background-color: $color-seagull;
+  }
+
+  &:active::after {
+    background-color: $color-pink-swan;
+  }
 }

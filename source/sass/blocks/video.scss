@@ -63,6 +63,10 @@
   cursor: pointer;
 
   clip-path: polygon(0 0, 0 100%, 100% 50%);
+
+  &:hover {
+    opacity: 80%;
+  }
 }
 
 .video__image {

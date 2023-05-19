@@ -10,7 +10,16 @@
   left: 50%;
   z-index: 1;
 
+  width: 185px;
+  height: 96px;
+
   transform: translate(-50%, 0);
+
+  .no-js & {
+    @media (max-width: $mobile-width-only) {
+      z-index: -1;
+    }
+  }
 }
 
 .main-header__toggle {
@@ -56,7 +65,7 @@
   }
 
   &--is-opened {
-    background-color: $color-seagull;
+    background-color: transparent;
 
     &::before,
     &::after {
@@ -72,10 +81,12 @@
     }
 
     &::before {
+      box-shadow: none;
       transform: rotate(45deg);
     }
 
     &::after {
+      box-shadow: none;
       transform: rotate(-45deg);
     }
 
